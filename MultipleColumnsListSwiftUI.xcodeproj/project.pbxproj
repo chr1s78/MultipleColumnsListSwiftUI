@@ -11,6 +11,9 @@
 		ADB0466226DCEF3100B2E1C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0466126DCEF3100B2E1C8 /* ContentView.swift */; };
 		ADB0466426DCEF3300B2E1C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB0466326DCEF3300B2E1C8 /* Assets.xcassets */; };
 		ADB0466726DCEF3300B2E1C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB0466626DCEF3300B2E1C8 /* Preview Assets.xcassets */; };
+		ADB0467226DCEF5700B2E1C8 /* MCListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0466F26DCEF5700B2E1C8 /* MCListRow.swift */; };
+		ADB0467326DCEF5700B2E1C8 /* MultiColumnListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0467026DCEF5700B2E1C8 /* MultiColumnListViewModel.swift */; };
+		ADB0467426DCEF5700B2E1C8 /* MultiColumnList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0467126DCEF5700B2E1C8 /* MultiColumnList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		ADB0466326DCEF3300B2E1C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADB0466626DCEF3300B2E1C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADB0466826DCEF3300B2E1C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADB0466F26DCEF5700B2E1C8 /* MCListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCListRow.swift; sourceTree = "<group>"; };
+		ADB0467026DCEF5700B2E1C8 /* MultiColumnListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiColumnListViewModel.swift; sourceTree = "<group>"; };
+		ADB0467126DCEF5700B2E1C8 /* MultiColumnList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiColumnList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 		ADB0465E26DCEF3100B2E1C8 /* MultipleColumnsListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				ADB0466E26DCEF5000B2E1C8 /* MCList */,
 				ADB0465F26DCEF3100B2E1C8 /* MultipleColumnsListSwiftUIApp.swift */,
 				ADB0466126DCEF3100B2E1C8 /* ContentView.swift */,
 				ADB0466326DCEF3300B2E1C8 /* Assets.xcassets */,
@@ -67,6 +74,16 @@
 				ADB0466626DCEF3300B2E1C8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADB0466E26DCEF5000B2E1C8 /* MCList */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0466F26DCEF5700B2E1C8 /* MCListRow.swift */,
+				ADB0467126DCEF5700B2E1C8 /* MultiColumnList.swift */,
+				ADB0467026DCEF5700B2E1C8 /* MultiColumnListViewModel.swift */,
+			);
+			path = MCList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADB0466226DCEF3100B2E1C8 /* ContentView.swift in Sources */,
+				ADB0467226DCEF5700B2E1C8 /* MCListRow.swift in Sources */,
+				ADB0467426DCEF5700B2E1C8 /* MultiColumnList.swift in Sources */,
+				ADB0467326DCEF5700B2E1C8 /* MultiColumnListViewModel.swift in Sources */,
 				ADB0466026DCEF3100B2E1C8 /* MultipleColumnsListSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.chr1s78.MultipleColumnsListSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.chr1s78.MultipleColumnsListSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
